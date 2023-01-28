@@ -17,11 +17,6 @@
   --color-shadow: rgba(240, 228, 255, 0.84);
   --color-error: red;
 
-  --breakpoint-sm: 575px;
-  --breakpoint-md: 767px;
-  --breakpoint-lg: 991px;
-  --breakpoint-xl: 1199px;
-
   --text-xs: 14px;
   --text-sm: 16px;
   --text-md: 18px;
