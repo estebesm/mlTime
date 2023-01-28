@@ -23,6 +23,6 @@ const Wrapper = styled.div`
 const Text = styled.span`
   display: block;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: bold;
   //color: var(--color-primary)
 `

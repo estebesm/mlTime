@@ -22,7 +22,7 @@ export const SignInForm = () => {
         setServerError('invalid email or password')
     }
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <Form onSubmit={handleSubmit(onSubmit)}>
             <Text>
                 Please fill your detail to access your account.
             </Text>
@@ -67,23 +67,27 @@ export const SignInForm = () => {
                     </span>
                 </label>
                 <Link href={"/password-recovery"}>
-                    Forgot password?
+                    <span style={{
+                        fontSize: "var(--text-sm)"
+                    }}>
+                        Forgot password?
+                    </span>
                 </Link>
             </Row>
 
             <SubmitButton type="submit">
-                submit
+                Sign in
             </SubmitButton>
             <ErrorMessage>
                 {serverError}
             </ErrorMessage>
-        </form>
+        </Form>
     );
 };
 
 
 const Form = styled.form`
-  
+  padding: 10px 0;
 `
 
 const Label = styled.label`

@@ -4,6 +4,8 @@ import {Logo} from "@/ui/Logo";
 import styled from "styled-components";
 import {SignInForm} from "@/components/forms/SignInForm";
 import {useFullHeight} from "@/hooks/useFullHeight";
+import {GoogleButton} from "@/ui/GoogleButton";
+import Link from "next/link";
 
 const Signin = () => {
     useFullHeight()
@@ -11,7 +13,18 @@ const Signin = () => {
         <Container>
             <Wrapper>
                 <Logo/>
-                <SignInForm/>
+                <div>
+                    <SignInForm/>
+                    <GoogleButton text={"Sign in with google"} disabled/>
+                </div>
+                <Text>
+                    <span>Don`t have an account? </span>
+                    <Link href={'/signup'}>
+                        <span style={{
+                            whiteSpace: 'nowrap',
+                        }}>Sign up</span>
+                    </Link>
+                </Text>
             </Wrapper>
         </Container>
     );
@@ -28,8 +41,8 @@ const Wrapper = styled.div`
   gap: 40px;
 `
 
-const Form = styled.form`
-  position: relative;
+const Text = styled.p`
+  text-align: center;
 `
 
 export default Signin;

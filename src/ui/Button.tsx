@@ -13,7 +13,7 @@ export const Button = styled.button`
   font-size: var(--text-md);
   &:active{
     background-color: var(--color-primary-dark);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
   }
   &:disabled{
     background-color: var(--color-accent);
