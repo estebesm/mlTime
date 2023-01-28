@@ -10,7 +10,7 @@ export const Input = styled.input.attrs<Props>((props => ({
     fullWidth: props.fullWidth,
 })))<Props>`
   outline: none;
-  padding: 6px 8px;
+  padding: 10px 12px;
   border: 1px solid ${({error}) => error ? 'var(--color-error)' : 'var(--color-accent)'};
   border-radius: var(--radius-xs);
   transition: all 0.15s ease-in-out;

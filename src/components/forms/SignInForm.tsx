@@ -23,7 +23,9 @@ export const SignInForm = () => {
     }
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <p>
+            <p style={{
+                padding: "20px 0"
+            }}>
                 Please fill your detail to access your account.
             </p>
             <Label>
@@ -87,7 +89,7 @@ const Form = styled.form`
 `
 
 const Label = styled.label`
-  margin: 10px 0;
+  margin: 20px 0;
   display: block;
 `
 
@@ -96,10 +98,10 @@ const Row = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 `
 
 const SubmitButton = styled(Button)`
-  margin: 20px 0 2px;
+  margin: 40px 0 2px;
   width: 100%;
 `
