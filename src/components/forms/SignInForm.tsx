@@ -23,11 +23,9 @@ export const SignInForm = () => {
     }
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <p style={{
-                padding: "20px 0"
-            }}>
+            <Text>
                 Please fill your detail to access your account.
-            </p>
+            </Text>
             <Label>
                 <Input placeholder={"email"}
                        error={!!errors.email}
@@ -104,4 +102,9 @@ const Row = styled.div`
 const SubmitButton = styled(Button)`
   margin: 40px 0 2px;
   width: 100%;
+`
+
+const Text = styled.p`
+  padding: 10px 0;
+  text-align: center;
 `
