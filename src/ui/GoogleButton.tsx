@@ -32,7 +32,7 @@ const StyledButton = styled.button`
   font-size: var(--text-md);
   background-color: inherit;
   &:active{
-    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    background-color: whitesmoke;
   }
   &:disabled{
     background-color: whitesmoke;
